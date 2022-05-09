@@ -6,7 +6,7 @@ a {
   text-decoration: none;
 }
 
-.anim-eas-in, .ul-nav, .hm-banner .hm-slider .container > .carousel .carousel-indicators, .hm-solution .container .solution-wraper ul li a, .hm-solution .container .solution-wraper ul li a:after, .hm-devOps-section > .container ul.row li > .con-wrapper, .umFooter .main .socialM li a {
+.anim-eas-in, .ul-nav, .hm-banner .hm-slider .container > .carousel .carousel-indicators, .hm-solution .container .solution-wraper ul li a, .hm-solution .container .solution-wraper ul li a:after, .hm-devOps-section > .container ul.row li > .con-wrapper, .umFooter .main .socialM li a, .hmWhatWeDo > .container .infographics li a {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -853,6 +853,10 @@ img {
   background: #ff7c39;
 }
 
+.umFooter .main .socialM li:last-child {
+  margin-bottom: 0;
+}
+
 .umFooter .copyRight {
   padding-top: 50px;
   font-size: 1rem;
@@ -861,5 +865,134 @@ img {
 
 .umFooter .copyRight a {
   font-size: 1rem;
+}
+
+.hmWhatWeDo {
+  padding: 100px 0;
+}
+
+.hmWhatWeDo > .container > .text-wrap {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.hmWhatWeDo > .container .infographics {
+  margin: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+.hmWhatWeDo > .container .infographics.left:before {
+  right: -20px;
+}
+
+.hmWhatWeDo > .container .infographics.right:before {
+  left: -20px;
+}
+
+.hmWhatWeDo > .container .infographics:before {
+  content: "";
+  width: 2px;
+  position: absolute;
+  top: 35px;
+  bottom: 31px;
+  z-index: 1;
+  background: #ff7c39;
+}
+
+@media (max-width: 767px) {
+  .hmWhatWeDo > .container .infographics:before {
+    left: 50% !important;
+    margin-left: -1px;
+  }
+}
+
+.hmWhatWeDo > .container .infographics li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.hmWhatWeDo > .container .infographics li a {
+  display: block;
+  border: 2px solid #ff7c39;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  color: #ff7c39;
+  position: relative;
+  background: #fff;
+  z-index: 10;
+}
+
+.hmWhatWeDo > .container .infographics li a:after {
+  content: "";
+  height: 2px;
+  background: #ff7c39;
+  width: 20px;
+  position: absolute;
+  top: 33px;
+}
+
+@media (max-width: 767px) {
+  .hmWhatWeDo > .container .infographics li a:after {
+    display: none;
+  }
+}
+
+.hmWhatWeDo > .container .infographics li a:hover {
+  background: #ff7c39;
+  color: #fff;
+}
+
+.hmWhatWeDo > .container .infographics li:last-child {
+  margin-bottom: 0;
+}
+
+.hmWhatWeDo > .container .infographics.left li a:after {
+  left: 100%;
+}
+
+.hmWhatWeDo > .container .infographics.right li a:after {
+  right: 100%;
+}
+
+.hmWhatWeDo > .container .inf-img {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  height: 100%;
+  position: relative;
+}
+
+.hmWhatWeDo > .container .inf-img::before {
+  position: absolute;
+  right: 0;
+  height: 2px;
+  background: #ff7c39;
+  top: 50%;
+  margin-top: 1px;
+  content: "";
+  left: -6px;
+  right: -6px;
+}
+
+@media (max-width: 767px) {
+  .hmWhatWeDo > .container .inf-img::before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.hmWhatWeDo > .container .inf-img img {
+  margin: auto;
+  position: relative;
 }
 /*# sourceMappingURL=stylesheet.css.map */

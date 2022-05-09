@@ -658,6 +658,9 @@ img {
             background: $orange;
           }
         }
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -667,6 +670,120 @@ img {
     color: lighten($t-grey, 50%);
     a{
       font-size: 1rem;
+    }
+  }
+}
+
+.hmWhatWeDo{
+  padding: 100px 0;
+  >.container{
+    >.text-wrap{
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 80px;
+    }
+    .infographics{
+      margin: auto;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      width: 100%;
+      &.left:before{
+        right: -20px;
+      }
+      &.right:before{
+        left: -20px;
+      }
+      &:before{
+        content: "";
+        width:  2px;
+        position: absolute;
+        top: 35px;
+        bottom: 31px;
+        z-index: 1;
+        background: $orange;
+        @media (max-width:767px) {
+          left: 50% !important;
+          margin-left: -1px;
+        }
+      }
+      
+      li{
+        display: block;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2rem;
+        a{
+          display: block;
+          border: 2px solid $orange;
+          border-radius: 8px;
+          text-align: center;
+          padding: 20px;
+          color: $orange;
+          position: relative;
+          background: $white;
+          z-index: 10;
+          &:after{
+            content: "";
+            height: 2px;
+            background: $orange;
+            width: 20px;
+            position: absolute;
+            top: 33px;
+            @media (max-width:767px) {
+              display: none;
+            }
+            
+          }
+          @extend .anim-eas-in;
+          &:hover{
+            background: $orange;
+            color: $white;
+          }
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      &.left{
+        li{
+          a:after{
+            left:100%;
+          }
+        }
+      }
+      &.right{
+        li{
+          a:after{
+            right:100%;
+          }
+        }
+      }
+    }
+    .inf-img{
+      flex-direction: column;
+      padding: 30px;
+      height: 100%;
+      position: relative;
+      &::before{
+        position: absolute;
+        right: 0;
+        height: 2px;
+        background: $orange;
+        top: 50%;
+        margin-top: 1px;
+        content: "";
+        left: -6px;
+        right: -6px;
+        @media (max-width:767px) {
+          transform: rotate(90deg);
+        }
+      }
+      img{
+        margin: auto;
+        position: relative;
+      }
     }
   }
 }
