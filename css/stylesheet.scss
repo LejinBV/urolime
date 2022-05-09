@@ -1,0 +1,672 @@
+@import "var";
+@import url("icomoon.css");
+html {
+  font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arimo";
+}
+body {
+  font-weight: 400;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+}
+.ul-nav {
+  padding: 30px 0;
+  @extend .anim-eas-in;
+  .navbar-brand {
+    max-width: 180px;
+  }
+  &.navbar-light .navbar-nav .nav-link.active,
+  &.navbar-light .navbar-nav .nav-link,
+  &.navbar-light .navbar-nav .show > .nav-link {
+    color: $white;
+  }
+  &.stickyNav{
+    background: $black;
+    padding: 15px 0;
+  }
+}
+.hm-banner {
+  height: 100vh;
+  background: url(../assets/images/home-bg.jpg);
+  background-position: bottom right;
+  background-size: cover;
+  .hm-slider {
+    height: 85%;
+    .container {
+      height: 100%;
+      > .carousel {
+        height: 100%;
+        > .carousel-inner {
+          pointer-events: none;
+        }
+        > .carousel-inner,
+        .carousel-item {
+          height: 100%;
+          * {
+            color: $white;
+          }
+          .cr-inner {
+            height: 100%;
+            display: flex;
+            position: relative;
+            .ifgps {
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              margin-top: -177px;
+              max-width: 40%;
+            }
+            .cr-co-l {
+              margin: auto 0;
+              max-width: 700px;
+              position: relative;
+              .aws-badge {
+                position: absolute;
+                right: -140px;
+                top: 20px;
+                max-width: 150px;
+              }
+              p {
+                font-size: 1.25rem;
+                font-weight: 100;
+              }
+              a.btn-banner {
+                text-decoration: none;
+                font-weight: 600;
+              }
+              span {
+                display: block;
+                margin-top: 50px;
+              }
+            }
+          }
+        }
+        .carousel-indicators {
+          justify-content: left;
+          margin-right: 0;
+          margin-bottom: 1rem;
+          margin-left: 0;
+          @extend .anim-eas-in;
+          .active {
+            width: 60px;
+            background-color: $orange;
+          }
+        }
+      }
+    }
+  }
+  .logoReal {
+    height: 15%;
+    background: rgba($black, 0.6);
+    > .container {
+      display: flex;
+      height: 100%;
+    }
+    ul {
+      margin: auto 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      width: 100%;
+      li {
+        margin: auto;
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+.hm-solution {
+  background: url(../assets/images/sol-bg.png) fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  padding: 30px 0;
+  display: flex;
+  @media (max-width:960px) {
+    height: auto;
+  }
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    content: "";
+    background: rgba($black, 0.6);
+  }
+  .container {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    z-index: 5;
+    * {
+      color: $white;
+    }
+    .solution-wraper {
+      padding: 30px 0;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: block;
+          height: 120px;
+          margin-bottom: 30px;
+          @media (max-width:960px) {
+            height: 70px;
+          }
+          a {
+            display: flex;
+            height: 100%;
+            padding: 15px;
+            background: $white;
+            font-size: 20px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            @extend .anim-eas-in;
+            &:after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 10px 10px 0;
+              border-color: transparent #fff transparent transparent;
+              position: absolute;
+              right: -10px;
+              top: -10px;
+              @extend .anim-eas-in;
+            }
+            span {
+              display: block;
+              margin: auto;
+              color: $black;
+            }
+            &:hover {
+              background: $orange;
+              span {
+                color: $white;
+              }
+              &:after {
+                right: 0;
+                top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+}
+
+.hm-shtIntro {
+  padding: 100px 0;
+  background: $bg-grey;
+  .row {
+    margin-top: 50px;
+  }
+  .col-sm-4 {
+    min-height: 350px;
+    height: 100%;
+    display: flex;
+    background: $white;
+    .cont-wrap {
+      padding: 35px;
+      color: $black;
+      margin: auto 0;
+      a {
+        text-decoration: none;
+        color: $orange;
+        text-align: right;
+        display: block;
+      }
+    }
+    &.bg-1 {
+      background: url(../assets/images/story-bg.png);
+      background-size: cover;
+    }
+    &.bg-2 {
+      background: url(../assets/images/yus.jpg);
+      background-size: cover;
+    }
+    &.bg-3 {
+      background: url(../assets/images/whorwe-bg.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+.hm-devOps-section {
+  padding: 100px 0;
+  > .container {
+    .heading-4 {
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+    .co-wrap {
+      max-width: 920px;
+      margin: auto;
+    }
+    ul.row {
+      list-style: none;
+      padding-left: 0;
+      li {
+        > .con-wrapper {
+          background: $white;
+          height: 300px;
+          padding: 25px;
+          position: relative;
+          border: 1px solid #d9d9d9;
+          display: flex;
+          @extend .anim-eas-in;
+          .icon {
+            position: absolute;
+            left: 25px;
+            bottom: 75px;
+            font-size: 50px;
+            color: $orange;
+          }
+          &:hover {
+            box-shadow: 0 26px 19px -14px rgba(0, 0, 0, 0.5);
+            // box-shadow: 0 26px 19px -14px rgb(0 0 0 / 50%);
+            margin-top: -5px;
+          }
+        }
+        &:nth-child(odd) {
+          > .con-wrapper {
+            background: $bg-grey;
+          }
+        }
+        @media (max-width:960px) {
+          flex: 1 0 100%;
+          > .con-wrapper{
+            height: 172px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hm-features {
+  overflow: hidden;
+  .row {
+    --bs-gutter-x: 7.5rem;
+  }
+  background: $bg-grey-2;
+  .bg-grey {
+    background: $bg-grey;
+    position: relative;
+    &::after {
+      background: $bg-grey;
+      content: "";
+      position: absolute;
+      right: -3000px;
+      width: 3000px;
+      bottom: 0;
+      top: 0;
+    }
+    &.bg-left {
+      &::after {
+        right: inherit;
+        left: -3000px;
+      }
+    }
+  }
+  .cont-wrap {
+    padding: 100px 0;
+    article {
+      position: relative;
+      display: flex;
+      -ms-flex-align: space-around;
+      margin-top: 50px;
+      img {
+        max-height: 64px;
+      }
+      a.view-more {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -15px;
+        line-height: 30px;
+        color: $orange;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hm-tecStack {
+  padding: 100px 0;
+  .container {
+    > .con-wrap {
+      max-width: 600px;
+      margin: auto;
+    }
+    // tab style starts here
+    .tab-inner {
+      &,
+      & * {
+        transition: all 0.25s;
+      }
+      .out-wrap {
+        position: relative;
+        padding: 30px;
+        width: 100%;
+        margin: 50px auto 0;
+        #tabs {
+          border-bottom: 0;
+          margin: 0 0px 20px;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          flex-wrap: nowrap !important;
+          height: 50px;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          li {
+            width: auto;
+            white-space: nowrap;
+            margin: 0 5px;
+            a {
+              cursor: pointer;
+              border: 0;
+              border-radius: 0;
+              margin: 0;
+              color: $t-grey;
+              text-decoration: none;
+              font-size: 1.25rem;
+              font-weight: 600;
+              padding: 20px 20px;
+              border-bottom: 2px solid $white;
+              text-align: center;
+              &:hover {
+                color: $orange;
+                border-bottom: 2px solid $orange;
+              }
+            }
+            &.active {
+              a {
+                color: $orange;
+                border-bottom: 2px solid $orange;
+              }
+            }
+          }
+        }
+        .tab-content {
+          overflow: hidden !important;
+          position: relative;
+          .logo-list {
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE 10+ */
+            li {
+              display: inline-block;
+              margin: 0 50px;
+              white-space: nowrap;
+              img {
+                max-height: 40px;
+              }
+            }
+
+            .marquee-inner {
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              line-height: 50px;
+              text-align: center;
+              /* Starting position */
+              -moz-transform: translateX(100%);
+              -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+              /* Apply animation to this element */
+              -moz-animation: scroll-left 50s linear infinite;
+              -webkit-animation: scroll-left 50s linear infinite;
+              animation: scroll-left 50s linear infinite;
+            }
+            /* Move it (define the animation) */
+            @-moz-keyframes scroll-left {
+              0% {
+                -moz-transform: translateX(100%);
+              }
+              100% {
+                -moz-transform: translateX(-100%);
+              }
+            }
+            @-webkit-keyframes scroll-left {
+              0% {
+                -webkit-transform: translateX(100%);
+              }
+              100% {
+                -webkit-transform: translateX(-100%);
+              }
+            }
+            @keyframes scroll-left {
+              0% {
+                -moz-transform: translateX(100%); /* Browser bug fix */
+                -webkit-transform: translateX(100%); /* Browser bug fix */
+                transform: translateX(100%);
+              }
+              100% {
+                -moz-transform: translateX(-100%); /* Browser bug fix */
+                -webkit-transform: translateX(-100%); /* Browser bug fix */
+                transform: translateX(-100%);
+              }
+            }
+          }
+        }
+      }
+    }
+    // tab style ends here
+  }
+}
+
+// testimonial
+.testimonial{
+  background: url(../assets/images/testi-bg.jpg);
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba($black, 0.8);
+  }
+  .container{
+    height: 690px;
+  }
+  
+  .testi-wrap{
+    margin: auto 0;
+    position: relative;
+    padding-top: 100px;
+    &.icon:before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $orange;
+      font-size: 60px;
+      z-index: 20;
+    }
+    p{
+      color: $white;
+      b{
+        color: $orange;
+      }
+    }
+    .authWrap{
+      display: flex;
+      margin-top: 100px;
+      .prof{
+        max-width: 134px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .authDetail{
+        margin-top: auto;
+        margin-left: 20px;
+        h6{
+          font-weight: bold;
+          font-size: 1.563rem;
+          margin-bottom: 5px;
+          color: $white;
+        }
+        p{
+          margin-top: 0;
+          margin-bottom: 0;
+          small{
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+  .carousel{
+    position: initial;
+    .carousel-indicators{
+      margin-bottom: 0;
+      left: inherit;
+      bottom: 80px;
+      @media (max-width:960px) {
+        bottom: 20px;
+        left: 0;
+      }
+      .active {
+        width: 60px;
+        background-color: $orange;
+      }
+    }
+  }
+}
+
+.hm-feedbackFm{
+  padding: 130px 0;
+  .hm-formWrap{
+    margin-top: 80px;
+    .btn{
+      width: auto;
+      margin-left: auto;
+    }
+  }
+
+}
+
+
+.umFooter{
+  padding: 100px 0 50px;
+  background: $bg-grey;
+  *{
+    font-size: 1.25rem;
+  }
+  header{
+    margin-bottom: 50px;
+    img{
+      max-height: 57px;
+    }
+  }
+  .main{
+    padding-bottom: 100px;
+    border-bottom: 1px solid lighten($t-grey, 70%);
+    .contactInfo{
+      @media (min-width:960px) {
+        padding: 0 40px;
+      }
+    }
+    p{
+      a{
+        text-decoration: none;
+      }
+      b{
+        color: $orange;
+        a{
+          text-decoration: none;
+        }
+      }
+      
+    }
+    .foot-nav{
+      display: flex;
+      a{
+        display: inline-block;
+        padding: 0px 10px;
+        border-right: 1px solid lighten($t-grey, 70%);
+        color: $black;
+        flex: auto;
+        &.active{
+          color: $orange;
+        }
+        &:last-child{
+          border-right: none;
+        }
+      }
+    }
+    .socialM{
+      display: flex;
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-top: 30px;
+      li{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        flex: auto;
+        text-align: center;
+        a{
+          display: inline-block;
+          border-radius: 50px;
+          width: 35px;
+          padding: 5px;
+          background: lighten($t-grey, 50%);
+          color: $white;
+          height: 35px;
+          font-size: 15px;
+          text-align: center;
+          line-height: 28px;
+          @extend .anim-eas-in;
+          &:hover{
+            background: $orange;
+          }
+        }
+      }
+    }
+  }
+  .copyRight{
+    padding-top: 50px;
+    font-size: 1rem;
+    color: lighten($t-grey, 50%);
+    a{
+      font-size: 1rem;
+    }
+  }
+}

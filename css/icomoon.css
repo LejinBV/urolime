@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'urolime';
+  src:  url('fonts/urolime.eot?sw9vi6');
+  src:  url('fonts/urolime.eot?sw9vi6#iefix') format('embedded-opentype'),
+    url('fonts/urolime.ttf?sw9vi6') format('truetype'),
+    url('fonts/urolime.woff?sw9vi6') format('woff'),
+    url('fonts/urolime.svg?sw9vi6#urolime') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'urolime' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pinterest:before {
+  content: "\e90b";
+}
+.icon-instagram:before {
+  content: "\e90c";
+}
+.icon-linkedin:before {
+  content: "\e90d";
+}
+.icon-Twitter:before {
+  content: "\e90e";
+}
+.icon-Youtube:before {
+  content: "\e90f";
+}
+.icon-Facebook:before {
+  content: "\e910";
+}
+.icon-area-custom-svgrepo-com:before {
+  content: "\e900";
+}
+.icon-award-quality-svgrepo-com:before {
+  content: "\e901";
+}
+.icon-budget-cost-svgrepo-com:before {
+  content: "\e902";
+}
+.icon-creative-process-svgrepo-com:before {
+  content: "\e903";
+}
+.icon-office-briefcase-svgrepo-com:before {
+  content: "\e904";
+}
+.icon-package-svgrepo-com:before {
+  content: "\e905";
+}
+.icon-quote:before {
+  content: "\e906";
+}
+.icon-result-svgrepo-com:before {
+  content: "\e907";
+}
+.icon-security-svgrepo-com:before {
+  content: "\e908";
+}
+.icon-user-svgrepo-com:before {
+  content: "\e909";
+}
+.icon-workflow-svgrepo-com:before {
+  content: "\e90a";
+}
