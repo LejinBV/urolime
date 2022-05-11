@@ -6,7 +6,11 @@ a {
   text-decoration: none;
 }
 
-.anim-eas-in, .ul-nav, .hm-banner .hm-slider .container > .carousel .carousel-indicators, .hm-solution .container .solution-wraper ul li a, .hm-solution .container .solution-wraper ul li a:after, .hm-devOps-section > .container ul.row li > .con-wrapper, .umFooter .main .socialM li a, .hmWhatWeDo > .container .infographics li a {
+a:hover {
+  color: #ff7c39;
+}
+
+.anim-eas-in, .ul-nav, .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu, .hm-banner .hm-slider .container > .carousel .carousel-indicators, .hm-solution .container .solution-wraper ul li a, .hm-solution .container .solution-wraper ul li a:after, .hm-devOps-section > .container ul.row li > .con-wrapper, .umFooter .main .socialM li a, .hmWhatWeDo > .container .infographics li a {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -108,9 +112,69 @@ img {
   color: #fff;
 }
 
+@media (min-width: 992px) {
+  .ul-nav.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  border-radius: 0;
+  top: 109px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px 0;
+}
+
+.ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .col-sm-4 {
+  margin-bottom: 50px;
+}
+
+.ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap {
+  position: relative;
+  color: #fff;
+}
+
+.ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap .nav-icon {
+  font-size: 50px;
+  color: #ff7c39;
+  margin-bottom: 25px;
+}
+
+.ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap a {
+  display: block;
+  line-height: 33px;
+  border-bottom: 1px solid #000;
+}
+
+.ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap a:hover {
+  color: #fff;
+}
+
 .ul-nav.stickyNav {
   background: #000000;
   padding: 15px 0;
+}
+
+.ul-nav.stickyNav .navbar-nav .dropdown-menu {
+  top: 79px;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .warning {
+    display: none;
+  }
 }
 
 .hm-banner {

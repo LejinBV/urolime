@@ -23,7 +23,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-binary-code:before {
+  content: "\e911";
+}
+.icon-cloud:before {
+  content: "\e912";
+}
+.icon-infinity:before {
+  content: "\e913";
+}
+.icon-kubernetes:before {
+  content: "\e914";
+}
+.icon-hours:before {
+  content: "\e915";
+}
+.icon-mobile-application:before {
+  content: "\e916";
+}
+.icon-PD:before {
+  content: "\e917";
+}
 .icon-pinterest:before {
   content: "\e90b";
 }
