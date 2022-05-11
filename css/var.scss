@@ -10,6 +10,9 @@ $bg-grey-2:#FBFBFB;
 a{
   color: $orange;
   text-decoration: none;
+  &:hover{
+    color: $orange;
+  }
 }
 .anim-eas-in {
   transition: all 500ms ease;

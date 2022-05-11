@@ -5,6 +5,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #ff7c39;
+}
+
 .anim-eas-in {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
