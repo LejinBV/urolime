@@ -55,11 +55,16 @@ img {
       border: 0 none;
       border-radius: 0;
       top: 109px;
-      background: rgba($black, 0.8);
-      padding: 30px 0;
+      // background: rgba($white, 0.8);
+      padding: 50px 0;
       @extend .anim-eas-in;
+      .row{
+        margin: 0 -30px;
+      }
       .col-sm-4{
         margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
       }
       .drop-nav-wrap{
         position: relative;
@@ -68,13 +73,23 @@ img {
           font-size: 50px;
           color: $orange;
           margin-bottom: 25px;
+          &.icon-infinity{
+            font-size: 40px;
+          }
+        }
+        h6{
+          font-size: 18px;
+          font-weight: bold;
+          color: $black;
         }
         a{
           display: block;
-          line-height: 33px;
-          border-bottom: 1px solid #000;
+          line-height: 40px;
+          border-bottom: 1px solid lighten($t-grey, 50%);
+          color: $black;
+          @extend .anim-eas-in;
           &:hover{
-            color: $white;
+            color: $orange;
           }
   
         }
@@ -94,7 +109,7 @@ img {
     .navbar-expand-lg .navbar-nav .dropdown-menu {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
-      background-color: rgba(0, 0, 0, 0.8);  
+      // background-color: rgba(0, 0, 0, 0.8);  
     }
     .warning {
       display: none;
