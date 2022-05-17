@@ -64,14 +64,33 @@ input, optgroup, select, textarea {
   padding: 20px;
 }
 
+/* Define minimum font size */
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+/* Define breakpoints and font sizes */
+@media (min-width: 640px) and (max-width: 1023px) {
   html {
-    font-size: 14px;
+    font-size: 1.0625rem;
   }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  html {
+    font-size: 1.125rem;
+  }
+}
+
+/* Define max font size and viewport */
+@media (min-width: 1280px) {
+  html {
+    font-size: 1.1875rem;
+  }
+}
+
+.custom-class {
+  display: none;
 }
 
 .h1,
