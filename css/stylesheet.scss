@@ -12,14 +12,14 @@ html {
   }
  }
  
- @media (min-width:1024px) and (max-width:1279px) {
+ @media (min-width:1024px) and (max-width:1366px) {
   html {
-   font-size: 1.125rem;
+   font-size: .71rem;
   }
  }
  
  /* Define max font size and viewport */
- @media (min-width:1280px) {
+ @media (min-width:1366px) {
   html {
    font-size: 1.1875rem;
   }
