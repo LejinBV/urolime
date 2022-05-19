@@ -4,34 +4,6 @@
 html {
   font-size:1rem;
  }
- 
- /* Define breakpoints and font sizes */
- @media (min-width:640px) and (max-width:1023px) {
-  html {
-   font-size: 1.0625rem;
-  }
- }
- 
- @media (min-width:1024px) and (max-width:1366px) {
-  html {
-   font-size: .71rem;
-  }
- }
- 
- /* Define max font size and viewport */
- @media (min-width:1366px) {
-  html {
-   font-size: 1.1875rem;
-  }
- }
-
-.custom-class {
-  display: none;
-}
-
-
-
-
 .h1,
 .h2,
 .h3,
@@ -201,7 +173,7 @@ img {
   background-position: bottom right;
   background-size: cover;
   .hm-slider {
-    height: 85%;
+    height: 88%;
     .container {
       height: 100%;
       > .carousel {
@@ -224,7 +196,7 @@ img {
               position: absolute;
               right: 20px;
               top: 50%;
-              margin-top: -177px;
+              margin-top: -9%;
               max-width: 40%;
             }
             .cr-co-l {
@@ -240,10 +212,19 @@ img {
               p {
                 font-size: 1.25rem;
                 font-weight: 100;
+                @media (max-width:1400px) {
+                  font-size: 1rem;
+                }
               }
               a.btn-banner {
                 text-decoration: none;
                 font-weight: 600;
+                i{
+                  margin-left: 10px;
+                  font-size: 15px;
+                  position: relative;
+                  top: 1px;
+                }
               }
               span {
                 display: block;
@@ -267,7 +248,7 @@ img {
     }
   }
   .logoReal {
-    height: 15%;
+    height: 12%;
     background: rgba($black, 0.6);
     > .container {
       display: flex;
@@ -281,7 +262,7 @@ img {
       width: 100%;
       li {
         margin: auto;
-        padding: 0 15px;
+        padding: 0 2vw;
       }
     }
   }
@@ -290,9 +271,9 @@ img {
 .hm-solution {
   background: url(../assets/images/sol-bg.png) fixed;
   background-size: cover;
-  height: 100vh;
+  // height: 100vh;
   position: relative;
-  padding: 30px 0;
+  padding: 10vh 0;
   display: flex;
   @media (max-width:960px) {
     height: auto;
@@ -344,12 +325,15 @@ img {
               height: 0;
               border-style: solid;
               border-width: 0 10px 10px 0;
-              border-color: transparent #fff transparent transparent;
+              border-color: transparent $orange transparent transparent;
               position: absolute;
-              right: -10px;
-              top: -10px;
+              // right: -10px;
+              // top: -10px;
+              right: 0;
+              top: 0;
               @extend .anim-eas-in;
             }
+            
             span {
               display: block;
               margin: auto;
@@ -363,6 +347,7 @@ img {
               &:after {
                 right: 0;
                 top: 0;
+                border-color: transparent $white transparent transparent;
               }
             }
           }
@@ -376,7 +361,7 @@ img {
 }
 
 .hm-shtIntro {
-  padding: 100px 0;
+  padding: 100px 0 120px;
   background: $bg-grey;
   .row {
     margin-top: 50px;
@@ -395,6 +380,7 @@ img {
         color: $orange;
         text-align: right;
         display: block;
+        font-size: 1.25rem;
       }
     }
     &.bg-1 {
@@ -489,8 +475,17 @@ img {
       }
     }
   }
+  
   .cont-wrap {
     padding: 100px 0;
+    .text-wrapp{
+      @media (min-width:1401px) {
+        min-height: 240px;
+      }
+      @media (min-width:1024px) {
+        min-height: 376px;
+      }
+    }
     article {
       position: relative;
       display: flex;
@@ -727,7 +722,12 @@ img {
     margin-top: 80px;
     .btn{
       width: auto;
+      margin-left: 20px;
+    }
+    .captcha-wrap{
       margin-left: auto;
+      max-width: 220px;
+      margin-right: 0;
     }
   }
 
@@ -739,6 +739,9 @@ img {
   background: $bg-grey;
   *{
     font-size: 1.25rem;
+    @media (max-width:1400px) {
+      font-size: 1rem
+    }
   }
   header{
     margin-bottom: 50px;
@@ -828,7 +831,7 @@ img {
 }
 
 .hmWhatWeDo{
-  padding: 100px 0;
+  padding: 100px 0 120px;
   >.container{
     >.text-wrap{
       max-width: 800px;
@@ -853,7 +856,7 @@ img {
         width:  2px;
         position: absolute;
         top: 35px;
-        bottom: 31px;
+        bottom: 37px;
         z-index: 1;
         background: $orange;
         @media (max-width:767px) {
@@ -877,6 +880,7 @@ img {
           position: relative;
           background: $white;
           z-index: 10;
+          font-size: 1.25rem;
           &:after{
             content: "";
             height: 2px;
@@ -925,7 +929,7 @@ img {
         height: 2px;
         background: $orange;
         top: 50%;
-        margin-top: 1px;
+        margin-top: -2px;
         content: "";
         left: -6px;
         right: -6px;

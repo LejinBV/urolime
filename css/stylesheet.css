@@ -11,9 +11,9 @@ a:hover {
 }
 
 .anim-eas-in, .ul-nav, .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu, .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap a, .hm-banner .hm-slider .container > .carousel .carousel-indicators, .hm-solution .container .solution-wraper ul li a, .hm-solution .container .solution-wraper ul li a:after, .hm-devOps-section > .container ul.row li > .con-wrapper, .umFooter .main .socialM li a, .hmWhatWeDo > .container .infographics li a {
-  transition: all 500ms ease;
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
+  transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
 }
 
 p {
@@ -26,6 +26,12 @@ p {
   font-size: 3.438rem;
   font-family: "Arimo";
   font-weight: 300;
+}
+
+@media (max-width: 1400px) {
+  .heading-1 {
+    font-size: 2.6rem;
+  }
 }
 
 .heading-4 {
@@ -67,30 +73,6 @@ input, optgroup, select, textarea {
 /* Define minimum font size */
 html {
   font-size: 1rem;
-}
-
-/* Define breakpoints and font sizes */
-@media (min-width: 640px) and (max-width: 1023px) {
-  html {
-    font-size: 1.0625rem;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1366px) {
-  html {
-    font-size: .71rem;
-  }
-}
-
-/* Define max font size and viewport */
-@media (min-width: 1366px) {
-  html {
-    font-size: 1.1875rem;
-  }
-}
-
-.custom-class {
-  display: none;
 }
 
 .h1,
@@ -292,7 +274,7 @@ img {
 }
 
 .hm-banner .hm-slider {
-  height: 85%;
+  height: 88%;
 }
 
 .hm-banner .hm-slider .container {
@@ -332,7 +314,7 @@ img {
   position: absolute;
   right: 20px;
   top: 50%;
-  margin-top: -177px;
+  margin-top: -9%;
   max-width: 40%;
 }
 
@@ -357,10 +339,25 @@ img {
   font-weight: 100;
 }
 
+@media (max-width: 1400px) {
+  .hm-banner .hm-slider .container > .carousel > .carousel-inner .cr-inner .cr-co-l p,
+  .hm-banner .hm-slider .container > .carousel .carousel-item .cr-inner .cr-co-l p {
+    font-size: 1rem;
+  }
+}
+
 .hm-banner .hm-slider .container > .carousel > .carousel-inner .cr-inner .cr-co-l a.btn-banner,
 .hm-banner .hm-slider .container > .carousel .carousel-item .cr-inner .cr-co-l a.btn-banner {
   text-decoration: none;
   font-weight: 600;
+}
+
+.hm-banner .hm-slider .container > .carousel > .carousel-inner .cr-inner .cr-co-l a.btn-banner i,
+.hm-banner .hm-slider .container > .carousel .carousel-item .cr-inner .cr-co-l a.btn-banner i {
+  margin-left: 10px;
+  font-size: 15px;
+  position: relative;
+  top: 1px;
 }
 
 .hm-banner .hm-slider .container > .carousel > .carousel-inner .cr-inner .cr-co-l span,
@@ -384,7 +381,7 @@ img {
 }
 
 .hm-banner .logoReal {
-  height: 15%;
+  height: 12%;
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -407,15 +404,14 @@ img {
 
 .hm-banner .logoReal ul li {
   margin: auto;
-  padding: 0 15px;
+  padding: 0 2vw;
 }
 
 .hm-solution {
   background: url(../assets/images/sol-bg.png) fixed;
   background-size: cover;
-  height: 100vh;
   position: relative;
-  padding: 30px 0;
+  padding: 10vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,10 +486,10 @@ img {
   height: 0;
   border-style: solid;
   border-width: 0 10px 10px 0;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent #ff7c39 transparent transparent;
   position: absolute;
-  right: -10px;
-  top: -10px;
+  right: 0;
+  top: 0;
 }
 
 .hm-solution .container .solution-wraper ul li a span {
@@ -513,6 +509,7 @@ img {
 .hm-solution .container .solution-wraper ul li a:hover:after {
   right: 0;
   top: 0;
+  border-color: transparent #fff transparent transparent;
 }
 
 .hm-solution .container .btn {
@@ -520,7 +517,7 @@ img {
 }
 
 .hm-shtIntro {
-  padding: 100px 0;
+  padding: 100px 0 120px;
   background: #F3F3F3;
 }
 
@@ -548,6 +545,7 @@ img {
   color: #ff7c39;
   text-align: right;
   display: block;
+  font-size: 1.25rem;
 }
 
 .hm-shtIntro .col-sm-4.bg-1 {
@@ -655,6 +653,18 @@ img {
 
 .hm-features .cont-wrap {
   padding: 100px 0;
+}
+
+@media (min-width: 1401px) {
+  .hm-features .cont-wrap .text-wrapp {
+    min-height: 240px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hm-features .cont-wrap .text-wrapp {
+    min-height: 376px;
+  }
 }
 
 .hm-features .cont-wrap article {
@@ -920,7 +930,13 @@ img {
 
 .hm-feedbackFm .hm-formWrap .btn {
   width: auto;
+  margin-left: 20px;
+}
+
+.hm-feedbackFm .hm-formWrap .captcha-wrap {
   margin-left: auto;
+  max-width: 220px;
+  margin-right: 0;
 }
 
 .umFooter {
@@ -930,6 +946,12 @@ img {
 
 .umFooter * {
   font-size: 1.25rem;
+}
+
+@media (max-width: 1400px) {
+  .umFooter * {
+    font-size: 1rem;
+  }
 }
 
 .umFooter header {
@@ -1040,7 +1062,7 @@ img {
 }
 
 .hmWhatWeDo {
-  padding: 100px 0;
+  padding: 100px 0 120px;
 }
 
 .hmWhatWeDo > .container > .text-wrap {
@@ -1071,7 +1093,7 @@ img {
   width: 2px;
   position: absolute;
   top: 35px;
-  bottom: 31px;
+  bottom: 37px;
   z-index: 1;
   background: #ff7c39;
 }
@@ -1100,6 +1122,7 @@ img {
   position: relative;
   background: #fff;
   z-index: 10;
+  font-size: 1.25rem;
 }
 
 .hmWhatWeDo > .container .infographics li a:after {
@@ -1150,7 +1173,7 @@ img {
   height: 2px;
   background: #ff7c39;
   top: 50%;
-  margin-top: 1px;
+  margin-top: -2px;
   content: "";
   left: -6px;
   right: -6px;

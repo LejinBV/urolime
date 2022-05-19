@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-forward:before {
+  content: "\e918";
+}
 .icon-binary-code:before {
   content: "\e911";
 }
