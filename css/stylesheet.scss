@@ -231,6 +231,35 @@ img {
                 margin-top: 50px;
               }
             }
+            @media (max-width:960px) {
+              flex-direction: column;
+              .cr-co-l{
+                margin-top: 25px;
+                .aws-badge{
+                  position: inherit;
+                  right: 0;
+                  top: 0;
+                  max-width: 100px;
+                  margin-top: 25px;
+                  margin-bottom: 25px;
+                }
+                .heading-1{
+                  font-size: 2rem;
+                }
+                .mouse{
+                  display: none;
+                }
+              }
+              .ifgps{
+                position: inherit;
+                right: 0;
+                top: 0%;
+                margin-top: 25px;
+                max-width: 200px;
+                
+              }
+              
+            }
           }
         }
         .carousel-indicators {
