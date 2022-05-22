@@ -27,5 +27,5 @@ $('#tabs li').tabbing();
 $('#tabs li').click(function(){
   var  hashit = $(this).find('a').attr('href')
   var autoHeight = $(hashit).height() + 30;
-$('.tab-content').animate({height: autoHeight}, 100);
+$('.tab-content').animate({}, 100);
 });
