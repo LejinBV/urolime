@@ -214,6 +214,10 @@ body {
   font-size: 16px;
 }
 
+body.ofHidden {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
 }
@@ -773,7 +777,7 @@ img {
 .hm-solution .container .solution-wraper ul li a span {
   display: block;
   margin: auto;
-  color: #000000;
+  color: #2b2b2b;
 }
 
 .hm-solution .container .solution-wraper ul li a:hover {
@@ -966,13 +970,13 @@ img {
 
 @media (min-width: 1401px) {
   .hm-features .cont-wrap .text-wrapp {
-    min-height: 240px;
+    min-height: 534px;
   }
 }
 
 @media (min-width: 1024px) {
   .hm-features .cont-wrap .text-wrapp {
-    min-height: 376px;
+    min-height: 586px;
   }
 }
 
@@ -1036,7 +1040,7 @@ img {
 .hm-tecStack .container .tab-inner .out-wrap #tabs {
   border-bottom: 0;
   margin: 0 0px 20px;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
@@ -1091,6 +1095,25 @@ img {
 .hm-tecStack .container .tab-inner .out-wrap .tab-content .logo-list img {
   max-height: 50px;
   max-width: 100%;
+}
+
+.hm-tecStack .container .tab-inner .out-wrap .tab-content .logo-list .frontend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.hm-tecStack .container .tab-inner .out-wrap .tab-content .logo-list .frontend > div {
+  width: 410px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .testimonial {
