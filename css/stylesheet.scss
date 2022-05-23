@@ -21,6 +21,9 @@ h6 {
 body {
   font-weight: 400;
   font-size: 16px;
+  &.ofHidden{
+    overflow: hidden;
+  }
 }
 img {
   max-width: 100%;
@@ -178,9 +181,7 @@ img {
       height: 100%;
       > .carousel {
         height: 100%;
-        > .carousel-inner {
-          // pointer-events: none;
-        }
+       
         > .carousel-inner,
         .carousel-item {
           height: 100%;
@@ -484,7 +485,7 @@ img {
             span {
               display: block;
               margin: auto;
-              color: $t-gre;
+              color: $t-grey;
             }
             &:hover {
               background: $orange;
@@ -656,10 +657,10 @@ img {
     padding: 100px 0;
     .text-wrapp{
       @media (min-width:1401px) {
-        min-height: 240px;
+        min-height: 534px;
       }
       @media (min-width:1024px) {
-        min-height: 376px;
+        min-height: 586px;
       }
     }
     article {
@@ -710,7 +711,7 @@ img {
         #tabs {
           border-bottom: 0;
           margin: 0 0px 20px;
-          overflow-x: scroll;
+          overflow-x: hidden;
           overflow-y: hidden;
           flex-wrap: nowrap !important;
           height: 50px;
@@ -754,6 +755,17 @@ img {
             img{
               max-height: 50px;
               max-width: 100%;
+            }
+            .frontend{
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-content: space-around;
+              >div{
+                width: 410px;
+                text-align: center;
+                margin-bottom: 50px;
+              }
             }
           }
         }
