@@ -179,7 +179,7 @@ img {
       > .carousel {
         height: 100%;
         > .carousel-inner {
-          pointer-events: none;
+          // pointer-events: none;
         }
         > .carousel-inner,
         .carousel-item {
@@ -219,11 +219,15 @@ img {
               a.btn-banner {
                 text-decoration: none;
                 font-weight: 600;
+                @extend .anim-eas-in;
                 i{
                   margin-left: 10px;
                   font-size: 15px;
                   position: relative;
                   top: 1px;
+                }
+                &:hover{
+                  color: $orange;
                 }
               }
               span {
@@ -480,7 +484,7 @@ img {
             span {
               display: block;
               margin: auto;
-              color: $black;
+              color: $t-gre;
             }
             &:hover {
               background: $orange;
