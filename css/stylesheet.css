@@ -10,7 +10,8 @@ a:hover {
   color: #ff7c39;
 }
 
-.anim-eas-in, .ul-nav, .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu, .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap a, .hm-banner .hm-slider .container > .carousel .carousel-indicators, .hm-solution .container .solution-wraper ul li a, .hm-solution .container .solution-wraper ul li a:after, .hm-devOps-section > .container ul.row li > .con-wrapper, .umFooter .main .socialM li a, .hmWhatWeDo > .container .infographics li a {
+.anim-eas-in, .ul-nav, .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu, .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap a, .hm-banner .hm-slider .container > .carousel > .carousel-inner .cr-inner .cr-co-l a.btn-banner,
+.hm-banner .hm-slider .container > .carousel .carousel-item .cr-inner .cr-co-l a.btn-banner, .hm-banner .hm-slider .container > .carousel .carousel-indicators, .hm-solution .container .solution-wraper ul li a, .hm-solution .container .solution-wraper ul li a:after, .hm-devOps-section > .container ul.row li > .con-wrapper, .umFooter .main .socialM li a, .hmWhatWeDo > .container .infographics li a {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -403,10 +404,6 @@ img {
   height: 100%;
 }
 
-.hm-banner .hm-slider .container > .carousel > .carousel-inner {
-  pointer-events: none;
-}
-
 .hm-banner .hm-slider .container > .carousel > .carousel-inner,
 .hm-banner .hm-slider .container > .carousel .carousel-item {
   height: 100%;
@@ -476,6 +473,11 @@ img {
   font-size: 15px;
   position: relative;
   top: 1px;
+}
+
+.hm-banner .hm-slider .container > .carousel > .carousel-inner .cr-inner .cr-co-l a.btn-banner:hover,
+.hm-banner .hm-slider .container > .carousel .carousel-item .cr-inner .cr-co-l a.btn-banner:hover {
+  color: #ff7c39;
 }
 
 .hm-banner .hm-slider .container > .carousel > .carousel-inner .cr-inner .cr-co-l span,
