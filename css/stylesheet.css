@@ -1040,11 +1040,19 @@ img {
 .hm-tecStack .container .tab-inner .out-wrap #tabs {
   border-bottom: 0;
   margin: 0 0px 20px;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
   height: 50px;
+}
+
+@media (min-width: 1024px) {
+  .hm-tecStack .container .tab-inner .out-wrap #tabs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .hm-tecStack .container .tab-inner .out-wrap #tabs::-webkit-scrollbar {
@@ -1111,9 +1119,16 @@ img {
 }
 
 .hm-tecStack .container .tab-inner .out-wrap .tab-content .logo-list .frontend > div {
-  width: 410px;
+  width: 14%;
   text-align: center;
   margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .hm-tecStack .container .tab-inner .out-wrap .tab-content .logo-list .frontend > div {
+    width: 25%;
+  }
 }
 
 .testimonial {
