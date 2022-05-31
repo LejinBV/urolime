@@ -711,10 +711,13 @@ img {
         #tabs {
           border-bottom: 0;
           margin: 0 0px 20px;
-          overflow-x: hidden;
+          overflow-x: auto;
           overflow-y: hidden;
           flex-wrap: nowrap !important;
           height: 50px;
+          @media (min-width:1024px) {
+            justify-content: center;
+          }
           &::-webkit-scrollbar {
             display: none;
           }
@@ -762,9 +765,13 @@ img {
               justify-content: center;
               align-content: space-around;
               >div{
-                width: 410px;
+                width: 14%;
                 text-align: center;
                 margin-bottom: 50px;
+                padding: 0 20px;
+                @media (max-width:767px) {
+                  width: 25%;
+                }
               }
             }
           }
