@@ -67,9 +67,13 @@ img {
       border: 0 none;
       border-radius: 0;
       top: 109px;
-      // background: rgba($white, 0.8);
       padding: 50px 0;
+      
       @extend .anim-eas-in;
+      @media (min-width: 993px){
+        height: calc(100vh - 79px);
+        overflow-y: auto;
+      }
       @media (max-width: 992px){
         position: initial;
         top: 0;
@@ -101,13 +105,13 @@ img {
         h6{
           font-size: 18px;
           font-weight: bold;
-          color: $black;
+          color: $t-grey;
         }
         a{
           display: block;
           line-height: 40px;
           border-bottom: 1px solid lighten($t-grey, 50%);
-          color: $black;
+          color: $t-grey;
           @extend .anim-eas-in;
           &:hover{
             color: $orange;
@@ -883,7 +887,7 @@ img {
 
 
 .umFooter{
-  padding: 100px 0 50px;
+  padding: 70px 0 30px;
   background: $bg-grey;
   *{
     font-size: 1.25rem;
@@ -898,7 +902,7 @@ img {
     }
   }
   .main{
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     border-bottom: 1px solid lighten($t-grey, 70%);
     .contactInfo{
       @media (min-width:960px) {
@@ -969,7 +973,7 @@ img {
     }
   }
   .copyRight{
-    padding-top: 50px;
+    padding-top: 30px;
     font-size: 1rem;
     color: lighten($t-grey, 50%);
     a{
@@ -1024,7 +1028,7 @@ img {
           border-radius: 8px;
           text-align: center;
           padding: 20px;
-          color: $black;
+          color: $t-grey;
           position: relative;
           background: $white;
           z-index: 10;
@@ -1262,3 +1266,4 @@ $mouseWheelHoverColor: $mouseHoverColor;
     transform: scaleY(0.5) translateY(0);
   }
 }
+
