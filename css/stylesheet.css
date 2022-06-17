@@ -142,7 +142,6 @@ input, optgroup, select, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70px;
 }
 
 .slick-track:before {
