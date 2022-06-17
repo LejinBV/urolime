@@ -105,6 +105,7 @@ input, optgroup, select, textarea {
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
+  height: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -124,6 +125,7 @@ input, optgroup, select, textarea {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .slick-list:focus {
@@ -142,6 +144,7 @@ input, optgroup, select, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .slick-track:before {
@@ -184,15 +187,15 @@ input, optgroup, select, textarea {
 
 @media (min-width: 980px) {
   .slick-initialized .slick-slide {
-    height: 55px;
+    height: 100%;
     margin: auto;
   }
 }
 
 @media (max-width: 980px) {
   .slick-initialized .slick-slide {
-    height: 30px;
-    margin: auto;
+    height: 100%;
+    margin: auto 20px;
   }
 }
 
@@ -474,7 +477,7 @@ img {
 .hm-banner .hm-slider .logoReal.slick-slider .slick-track > .carousel .carousel-item .cr-inner .cr-co-l,
 .hm-banner .logoReal.slick-slider .hm-slider .slick-track > .carousel .carousel-item .cr-inner .cr-co-l {
   margin: auto 0;
-  max-width: 700px;
+  max-width: 660px;
   position: relative;
 }
 
@@ -1579,6 +1582,12 @@ img {
   height: 12%;
   background: rgba(0, 0, 0, 0.3);
   padding: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .awards {
+    padding: 35px 0;
+  }
 }
 
 .awards .slider.slick-initialized.slick-slider .slick-list {
