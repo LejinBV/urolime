@@ -497,6 +497,7 @@ img {
 .hm-banner .logoReal.slick-slider .hm-slider .slick-track > .carousel .carousel-item .cr-inner .cr-co-l p {
   font-size: 1.25rem;
   font-weight: 100;
+  clear: both;
 }
 
 @media (max-width: 1400px) {
