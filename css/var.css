@@ -181,15 +181,15 @@ input, optgroup, select, textarea {
 
 @media (min-width: 980px) {
   .slick-initialized .slick-slide {
-    height: 69px;
-    margin: auto 26px;
+    height: 55px;
+    margin: auto;
   }
 }
 
 @media (max-width: 980px) {
   .slick-initialized .slick-slide {
-    height: 40px;
-    margin: auto 20px;
+    height: 30px;
+    margin: auto;
   }
 }
 
