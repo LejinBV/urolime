@@ -948,8 +948,8 @@ img {
 .hm-devOps-section > .container ul.row li > .con-wrapper .icon, .hm-banner .logoReal.slick-slider .hm-devOps-section > .slick-track ul.row li > .con-wrapper .icon {
   position: absolute;
   left: 25px;
-  bottom: 75px;
-  font-size: 50px;
+  top: 30px;
+  font-size: 70px;
   color: #ff7c39;
 }
 
@@ -986,9 +986,11 @@ img {
     position: inherit;
     left: 0;
     bottom: 0;
+    top: initial;
     margin-right: 15px;
     width: 60px;
     text-align: center;
+    font-size: 50px;
   }
   .hm-devOps-section > .container ul.row li > .con-wrapper .icon, .hm-banner .logoReal.slick-slider .hm-devOps-section > .slick-track ul.row li > .con-wrapper .icon, .hm-devOps-section > .container ul.row li > .con-wrapper h6, .hm-banner .logoReal.slick-slider .hm-devOps-section > .slick-track ul.row li > .con-wrapper h6 {
     margin-top: auto;
@@ -1040,7 +1042,7 @@ img {
 
 @media (min-width: 1024px) {
   .hm-features .cont-wrap .text-wrapp {
-    min-height: 536px;
+    min-height: 550px;
   }
 }
 
@@ -1200,7 +1202,7 @@ img {
 .testimonial {
   background: url(../assets/images/testi-bg.jpg);
   background-size: cover;
-  padding: 70px 0;
+  padding: 40px 0px;
   position: relative;
 }
 
@@ -1347,6 +1349,15 @@ img {
 @media (min-width: 960px) {
   .umFooter .main .contactInfo {
     padding: 0 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .umFooter .main .col-sm-3 {
+    margin-bottom: 50px;
+  }
+  .umFooter .main .col-sm-4 {
+    margin-top: 50px;
   }
 }
 
