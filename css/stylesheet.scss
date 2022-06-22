@@ -581,8 +581,8 @@ img {
           .icon {
             position: absolute;
             left: 25px;
-            bottom: 75px;
-            font-size: 50px;
+            top: 30px;
+            font-size: 70px;
             color: $orange;
           }
           &:hover {
@@ -613,9 +613,11 @@ img {
               position: inherit;
               left: 0;
               bottom: 0;
+              top: initial;
               margin-right: 15px;
               width: 60px;
               text-align: center;
+              font-size: 50px;
             }
             .icon, h6{
               margin-top: auto;
@@ -666,7 +668,7 @@ img {
         min-height: 456px;
       }
       @media (min-width:1024px) {
-        min-height: 536px;
+        min-height: 550px;
       }
     }
     article {
@@ -792,7 +794,7 @@ img {
 .testimonial{
   background: url(../assets/images/testi-bg.jpg);
   background-size: cover;
-  padding: 70px 0;
+  padding: 40px 0px;
   position: relative;
   &::before{
     position: absolute;
@@ -909,6 +911,14 @@ img {
     .contactInfo{
       @media (min-width:960px) {
         padding: 0 40px;
+      }
+    }
+    @media (max-width:960px) {
+      .col-sm-3{
+        margin-bottom: 50px;
+      }
+      .col-sm-4{
+        margin-top: 50px;
       }
     }
     p{
