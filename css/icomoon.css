@@ -67,6 +67,7 @@
 }
 .icon-area-custom-svgrepo-com:before {
   content: "\e900";
+  font-size: 57px;
 }
 .icon-award-quality-svgrepo-com:before {
   content: "\e901";
@@ -79,6 +80,7 @@
 }
 .icon-office-briefcase-svgrepo-com:before {
   content: "\e904";
+  font-size: 50px;
 }
 .icon-package-svgrepo-com:before {
   content: "\e905";
@@ -88,9 +90,11 @@
 }
 .icon-result-svgrepo-com:before {
   content: "\e907";
+  font-size: 54px;
 }
 .icon-security-svgrepo-com:before {
   content: "\e908";
+  font-size: 54px;
 }
 .icon-user-svgrepo-com:before {
   content: "\e909";

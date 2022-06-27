@@ -39,13 +39,14 @@ img {
     max-width: 180px;
     @media (max-width: 992px){
       padding: 20px 0;
-    }
+      }
     }
     
     &.navbar-light .navbar-nav .nav-link.active,
     &.navbar-light .navbar-nav .nav-link,
     &.navbar-light .navbar-nav .show > .nav-link {
       color: $white;
+      font-family: "Arimo";
       @media (max-width: 992px){
         color: $t-grey;
       }
@@ -241,11 +242,7 @@ img {
                 display: block;
                 margin-top: 50px;
               }
-              @media (max-width:767px) {
-                .mouse{
-                  display: none;
-                }
-              }
+              
             }
             
             @media (max-width:960px) {
@@ -1137,62 +1134,46 @@ img {
     }
   }
 }
-
-
-
-
-
 $mouseHeight: 70px;
 $mouseWidth: 45px;
 $mouseWheelColor: $orange;
 $hoverTransition: 0.2s ease-in-out;
 $mouseHoverColor: rgba(255, 255, 255, 0.4);
 $mouseWheelHoverColor: $mouseHoverColor;
-
-
-
-
 .mouse-outer {
   position: relative;
   display: inline-block;
-
   height: $mouseHeight;
   width: $mouseWidth;
-
   border: 2px solid $white;
   border-radius: $mouseHeight;
-  
   transition: border-color $hoverTransition;
-
   .mouse-wheel {
     $wheelWidth: #{ceil($mouseWidth / 12)};
     $halfWheelWidth: #{$mouseWidth / 50};
-
     position: absolute;
     top: 10%;
     left: 50%;
     margin-left: -$halfWheelWidth;
-
     height: #{$mouseHeight / 4};
     width: $wheelWidth;
     background-color: $mouseWheelColor;
-
     border-radius: $wheelWidth;
-    
     transition: background-color $hoverTransition;
-    
     -webkit-animation: scroll 1.4s infinite linear;
     -moz-animation: scroll 1.4s infinite linear;
     -o-animation: scroll 1.4s infinite linear;
     animation: scroll 1.4s infinite linear;
   }
-  
   &:hover {
     border-color: $mouseHoverColor;
     .mouse-wheel {
       background-color: $mouseWheelHoverColor;
     }
   }
+ @media (max-width:768px) {
+  display: none !important;
+ }
 }
 
 @-webkit-keyframes scroll {

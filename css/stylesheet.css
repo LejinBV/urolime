@@ -22,7 +22,7 @@ a:hover {
 p {
   font-family: "Noto Sans";
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .heading-1 {
@@ -266,6 +266,7 @@ img {
 .ul-nav.navbar-light .navbar-nav .nav-link,
 .ul-nav.navbar-light .navbar-nav .show > .nav-link {
   color: #fff;
+  font-family: "Arimo";
 }
 
 @media (max-width: 992px) {
@@ -540,15 +541,6 @@ img {
 .hm-banner .logoReal.slick-slider .hm-slider .slick-track > .carousel .carousel-item .cr-inner .cr-co-l span {
   display: block;
   margin-top: 50px;
-}
-
-@media (max-width: 767px) {
-  .hm-banner .hm-slider .container > .carousel > .carousel-inner .cr-inner .cr-co-l .mouse, .hm-banner .hm-slider .logoReal.slick-slider .slick-track > .carousel > .carousel-inner .cr-inner .cr-co-l .mouse, .hm-banner .logoReal.slick-slider .hm-slider .slick-track > .carousel > .carousel-inner .cr-inner .cr-co-l .mouse,
-  .hm-banner .hm-slider .container > .carousel .carousel-item .cr-inner .cr-co-l .mouse,
-  .hm-banner .hm-slider .logoReal.slick-slider .slick-track > .carousel .carousel-item .cr-inner .cr-co-l .mouse,
-  .hm-banner .logoReal.slick-slider .hm-slider .slick-track > .carousel .carousel-item .cr-inner .cr-co-l .mouse {
-    display: none;
-  }
 }
 
 @media (max-width: 960px) {
@@ -1649,6 +1641,12 @@ img {
 
 .mouse-outer:hover .mouse-wheel {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .mouse-outer {
+    display: none !important;
+  }
 }
 
 @-webkit-keyframes scroll {
