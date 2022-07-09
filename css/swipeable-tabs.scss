@@ -17,6 +17,9 @@ $height: 70px;
   @media (min-width:961px) {
     height: 410px !important;
   }
+  @media (max-width:960px) {
+    height: 320px ;
+  }
   nav {
     ul {
       height: $height;
@@ -44,10 +47,10 @@ $height: 70px;
         margin-left: 0px !important;
       }
       @media (max-width:960px) {
+        display: inline-block;
         position: absolute;
         top: 0;
         left: 100%;
-        display: block;
         transition: 1s all;
         transform: translate3d(0,0,0);
         line-height: $height;  
@@ -170,8 +173,8 @@ $height: 70px;
   }
 }
 
-@media all and (min-width: 320px) {
-  body {
-    padding: 20px 0;
-  }
-}
+// @media all and (min-width: 320px) {
+//   body {
+//     padding: 20px 0;
+//   }
+// }

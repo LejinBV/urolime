@@ -205,6 +205,11 @@ input, optgroup, select, textarea {
     height: 410px !important;
   }
 }
+@media (max-width: 960px) {
+  .swipegory {
+    height: 320px;
+  }
+}
 .swipegory nav ul {
   height: 70px;
   text-align: center;
@@ -236,10 +241,10 @@ input, optgroup, select, textarea {
 }
 @media (max-width: 960px) {
   .swipegory nav li {
+    display: inline-block;
     position: absolute;
     top: 0;
     left: 100%;
-    display: block;
     transition: 1s all;
     transform: translate3d(0, 0, 0);
     line-height: 70px;
@@ -361,11 +366,6 @@ input, optgroup, select, textarea {
   transform: translate3d(0, 0, 0);
 }
 
-@media all and (min-width: 320px) {
-  body {
-    padding: 20px 0;
-  }
-}
 /* Define minimum font size */
 html {
   font-size: 1rem;
@@ -475,6 +475,11 @@ img {
 }
 .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap .nav-icon.icon-infinity {
   font-size: 40px;
+}
+@media (min-width: 960px) {
+  .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap .nav-icon.icon-hours {
+    margin-top: 57px;
+  }
 }
 .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap h6 {
   font-size: 18px;
@@ -1186,8 +1191,10 @@ img {
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
 }
-.testimonial .container, .testimonial .hm-banner .logoReal.slick-slider .slick-track, .hm-banner .logoReal.slick-slider .testimonial .slick-track {
-  height: 690px;
+@media (min-width: 961px) {
+  .testimonial .container, .testimonial .hm-banner .logoReal.slick-slider .slick-track, .hm-banner .logoReal.slick-slider .testimonial .slick-track {
+    height: 690px;
+  }
 }
 .testimonial .testi-wrap {
   margin: auto 0;
@@ -1211,6 +1218,11 @@ img {
 .testimonial .testi-wrap .authWrap {
   display: flex;
   margin-top: 90px;
+}
+@media (max-width: 960px) {
+  .testimonial .testi-wrap .authWrap {
+    margin-bottom: 50px;
+  }
 }
 .testimonial .testi-wrap .authWrap .prof {
   max-width: 134px;
