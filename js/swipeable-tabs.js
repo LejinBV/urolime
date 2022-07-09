@@ -49,7 +49,7 @@ $("ul.panes").swipe({
     goTo--;
     swipegoryUpdate(goTo); 
   },
-  threshold: 50,
+  threshold: 100,
   triggerOnTouchEnd: false,
   allowPageScroll: "vertical",
   excludedElements: "button, input, select, textarea, .noSwipe"

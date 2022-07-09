@@ -105,7 +105,13 @@ img {
           &.icon-infinity{
             font-size: 40px;
           }
+          &.icon-hours {
+            @media (min-width:960px) {
+              margin-top: 57px;
+            }
+          }
         }
+        
         h6{
           font-size: 18px;
           font-weight: bold;
@@ -805,7 +811,9 @@ img {
     background: rgba($black, 0.8);
   }
   .container{
-    height: 690px;
+    @media (min-width:961px) {
+      height: 690px;
+    }
   }
   
   .testi-wrap{
@@ -829,6 +837,9 @@ img {
     .authWrap{
       display: flex;
       margin-top: 90px;
+      @media (max-width:960px) {
+        margin-bottom: 50px;
+      }
       .prof{
         max-width: 134px;
         border-radius: 20px;
