@@ -232,7 +232,6 @@ input, optgroup, select, textarea {
   transform: translate3d(0, 0, 0);
   line-height: 70px;
   height: 70px;
-  text-transform: uppercase;
 }
 @media (min-width: 961px) {
   .swipegory nav li {
@@ -249,7 +248,6 @@ input, optgroup, select, textarea {
     transform: translate3d(0, 0, 0);
     line-height: 70px;
     height: 70px;
-    text-transform: uppercase;
   }
 }
 .swipegory nav li.prev {
@@ -472,6 +470,7 @@ img {
   font-size: 50px;
   color: #ff7c39;
   margin-bottom: 25px;
+  min-height: 76px;
 }
 .ul-nav.navbar-expand-lg .navbar-nav .dropdown-menu .drop-nav-wrap .nav-icon.icon-infinity {
   font-size: 40px;
