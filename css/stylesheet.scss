@@ -191,7 +191,7 @@ img {
   background-position: bottom right;
   background-size: cover;
   .hm-slider {
-    height: 88%;
+    height: calc(100% - 100px);
     .container {
       height: 100%;
       > .carousel {
@@ -1127,7 +1127,7 @@ img {
 }
 /* Slider */
 .awards{
-  height: 12%;
+  height: 100px;
   background: rgba(0,0,0,.3);
   padding: 20px 0;
   @media (max-width:767px) {
@@ -1249,4 +1249,3 @@ $mouseWheelHoverColor: $mouseHoverColor;
     transform: scaleY(0.5) translateY(0);
   }
 }
-

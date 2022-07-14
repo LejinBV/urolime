@@ -556,7 +556,7 @@ img {
   background-size: cover;
 }
 .hm-banner .hm-slider {
-  height: 88%;
+  height: calc(100% - 100px);
 }
 .hm-banner .hm-slider .container, .hm-banner .hm-slider .logoReal.slick-slider .slick-track, .hm-banner .logoReal.slick-slider .hm-slider .slick-track {
   height: 100%;
@@ -1500,7 +1500,7 @@ img {
 
 /* Slider */
 .awards {
-  height: 12%;
+  height: 100px;
   background: rgba(0, 0, 0, 0.3);
   padding: 20px 0;
 }
